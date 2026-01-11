@@ -214,16 +214,27 @@
       if (!navmenulink.hash) return;
       let section = document.querySelector(navmenulink.hash);
       if (!section) return;
+      
       let position = window.scrollY + 200;
-      if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
+      
+      // Détection du bas de page
+      let isBottom = (window.innerHeight + window.scrollY) >= document.body.offsetHeight - 10;
+
+      if (isBottom) {
+        // Si on est en bas, on active uniquement le dernier lien (Crédits)
+        document.querySelectorAll('.navmenu a.active').forEach(link => link.classList.remove('active'));
+        const lastLink = navmenulinks[navmenulinks.length - 1];
+        if (lastLink) lastLink.classList.add('active');
+      } else if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
+        // Sinon, comportement normal
         document.querySelectorAll('.navmenu a.active').forEach(link => link.classList.remove('active'));
         navmenulink.classList.add('active');
       } else {
         navmenulink.classList.remove('active');
       }
-    })
+    });
   }
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
-})();
+})(); // <--- IL MANQUE SUREMENT CETTE LIGNE POUR FERMER LE FICHIER
