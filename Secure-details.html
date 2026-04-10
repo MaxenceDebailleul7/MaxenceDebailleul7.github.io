@@ -91,8 +91,31 @@
           <div class="ac-block-projects">
             <div class="row gy-3">
               <div class="col-12">
-                <div class="ac-placeholder-mini">
-                  <i class="bi bi-folder-plus"></i> Aucun projet pour cet apprentissage — à compléter prochainement.
+                <div class="ac-reflexif">
+                  <div class="reflexif-item">
+                    <span class="reflexif-label"><i class="bi bi-pencil"></i> Ce que j'ai fait</span>
+                    <p>J'ai étudié les recommandations de l'ANSSI et les bonnes pratiques de sécurité (gestion des mots de passe, mise à jour, principe de moindre privilège) et les ai appliquées lors des TPs.</p>
+                  </div>
+                  <div class="reflexif-item">
+                    <span class="reflexif-label"><i class="bi bi-lightbulb"></i> Pourquoi je l'ai fait</span>
+                    <p>La cybersécurité repose avant tout sur des pratiques de base ; respecter ces recommandations réduit drastiquement la surface d'attaque d'un système d'information.</p>
+                  </div>
+                  <div class="reflexif-item">
+                    <span class="reflexif-label"><i class="bi bi-tools"></i> Comment je l'ai fait</span>
+                    <p>En consultant les guides de l'ANSSI, en suivant les cours de cybersécurité et en appliquant concrètement les recommandations lors des configurations de systèmes en TP.</p>
+                  </div>
+                  <div class="reflexif-item">
+                    <span class="reflexif-label"><i class="bi bi-exclamation-triangle"></i> Mes difficultés</span>
+                    <p>Trouver le bon équilibre entre sécurité et praticité est difficile : des règles trop strictes bloquent l'usage normal d'un système, ce qui pousse les utilisateurs à les contourner.</p>
+                  </div>
+                  <div class="reflexif-item">
+                    <span class="reflexif-label"><i class="bi bi-mortarboard"></i> Ce que j'en ai appris</span>
+                    <p>J'ai compris que la sécurité n'est pas une liste de cases à cocher mais une démarche continue qui doit s'intégrer naturellement dans les pratiques quotidiennes.</p>
+                  </div>
+                  <div class="reflexif-item">
+                    <span class="reflexif-label"><i class="bi bi-arrow-clockwise"></i> Ce que je ferais autrement</span>
+                    <p>Je formerais systématiquement les utilisateurs aux bonnes pratiques dès le début d'un projet, car l'erreur humaine reste la première cause de failles de sécurité.</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -107,8 +130,31 @@
           <div class="ac-block-projects">
             <div class="row gy-3">
               <div class="col-12">
-                <div class="ac-placeholder-mini">
-                  <i class="bi bi-folder-plus"></i> Aucun projet pour cet apprentissage — à compléter prochainement.
+                <div class="ac-reflexif">
+                  <div class="reflexif-item">
+                    <span class="reflexif-label"><i class="bi bi-pencil"></i> Ce que j'ai fait</span>
+                    <p>J'ai configuré des pare-feux (iptables, ufw) avec des règles de filtrage, mis en place des ACL sur des équipements Cisco et segmenté un réseau en VLANs pour limiter les accès.</p>
+                  </div>
+                  <div class="reflexif-item">
+                    <span class="reflexif-label"><i class="bi bi-lightbulb"></i> Pourquoi je l'ai fait</span>
+                    <p>Ces outils constituent la première ligne de défense d'une infrastructure ; sans contrôle des flux réseau, n'importe quelle machine peut accéder à n'importe quel service.</p>
+                  </div>
+                  <div class="reflexif-item">
+                    <span class="reflexif-label"><i class="bi bi-tools"></i> Comment je l'ai fait</span>
+                    <p>En TP de sécurité réseau avec des VMs Linux, en utilisant iptables et ufw, et en configurant des ACL standard et étendues sur des routeurs Cisco dans Packet Tracer.</p>
+                  </div>
+                  <div class="reflexif-item">
+                    <span class="reflexif-label"><i class="bi bi-exclamation-triangle"></i> Mes difficultés</span>
+                    <p>L'ordre des règles dans iptables est crucial ; une règle mal positionnée peut bloquer du trafic légitime ou laisser passer du trafic indésirable. Les tests de validation ont été nombreux.</p>
+                  </div>
+                  <div class="reflexif-item">
+                    <span class="reflexif-label"><i class="bi bi-mortarboard"></i> Ce que j'en ai appris</span>
+                    <p>J'ai intégré le principe du moindre privilège appliqué au réseau : bloquer tout par défaut et n'autoriser que ce qui est explicitement nécessaire.</p>
+                  </div>
+                  <div class="reflexif-item">
+                    <span class="reflexif-label"><i class="bi bi-arrow-clockwise"></i> Ce que je ferais autrement</span>
+                    <p>Je documenterais chaque règle de pare-feu avec son objectif et les tests réalisés pour faciliter la maintenance et l'audit futurs de la politique de filtrage.</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -123,8 +169,31 @@
           <div class="ac-block-projects">
             <div class="row gy-3">
               <div class="col-12">
-                <div class="ac-placeholder-mini">
-                  <i class="bi bi-folder-plus"></i> Aucun projet pour cet apprentissage — à compléter prochainement.
+                <div class="ac-reflexif">
+                  <div class="reflexif-item">
+                    <span class="reflexif-label"><i class="bi bi-pencil"></i> Ce que j'ai fait</span>
+                    <p>J'ai sécurisé des services réseau (SSH avec authentification par clé, serveur web Apache avec HTTPS, accès FTP sécurisé) en appliquant les configurations recommandées.</p>
+                  </div>
+                  <div class="reflexif-item">
+                    <span class="reflexif-label"><i class="bi bi-lightbulb"></i> Pourquoi je l'ai fait</span>
+                    <p>Un service non sécurisé expose l'ensemble du système : sécuriser chaque service individuellement est indispensable pour construire une défense en profondeur.</p>
+                  </div>
+                  <div class="reflexif-item">
+                    <span class="reflexif-label"><i class="bi bi-tools"></i> Comment je l'ai fait</span>
+                    <p>En configurant les fichiers de configuration des services (sshd_config, apache2.conf), en générant des certificats SSL auto-signés et en testant les accès avec des outils de vérification.</p>
+                  </div>
+                  <div class="reflexif-item">
+                    <span class="reflexif-label"><i class="bi bi-exclamation-triangle"></i> Mes difficultés</span>
+                    <p>La configuration de HTTPS avec les bons paramètres SSL/TLS (protocoles activés, suites de chiffrement) a demandé de consulter des guides spécialisés pour éviter les configurations vulnérables.</p>
+                  </div>
+                  <div class="reflexif-item">
+                    <span class="reflexif-label"><i class="bi bi-mortarboard"></i> Ce que j'en ai appris</span>
+                    <p>J'ai compris que la sécurisation d'un service ne s'arrête pas à son activation : la configuration par défaut est rarement sécurisée et doit toujours être durcie (hardening).</p>
+                  </div>
+                  <div class="reflexif-item">
+                    <span class="reflexif-label"><i class="bi bi-arrow-clockwise"></i> Ce que je ferais autrement</span>
+                    <p>J'utiliserais des outils d'audit automatisé (Lynis, SSL Labs) dès la mise en place pour identifier les faiblesses de configuration avant la mise en production.</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -139,8 +208,31 @@
           <div class="ac-block-projects">
             <div class="row gy-3">
               <div class="col-12">
-                <div class="ac-placeholder-mini">
-                  <i class="bi bi-folder-plus"></i> Aucun projet pour cet apprentissage — à compléter prochainement.
+                <div class="ac-reflexif">
+                  <div class="reflexif-item">
+                    <span class="reflexif-label"><i class="bi bi-pencil"></i> Ce que j'ai fait</span>
+                    <p>J'ai étudié les principaux algorithmes cryptographiques (AES, RSA, SHA) et leurs cas d'usage, puis choisi et mis en œuvre des solutions adaptées (chiffrement de fichiers, signature numérique, VPN).</p>
+                  </div>
+                  <div class="reflexif-item">
+                    <span class="reflexif-label"><i class="bi bi-lightbulb"></i> Pourquoi je l'ai fait</span>
+                    <p>Chaque besoin de sécurité (confidentialité, intégrité, authenticité) correspond à un type d'outil cryptographique différent ; un mauvais choix peut rendre la protection inefficace.</p>
+                  </div>
+                  <div class="reflexif-item">
+                    <span class="reflexif-label"><i class="bi bi-tools"></i> Comment je l'ai fait</span>
+                    <p>En cours de cryptographie appliquée, avec des TP utilisant GPG pour le chiffrement de fichiers et la signature, et OpenSSL pour la génération de clés et certificats.</p>
+                  </div>
+                  <div class="reflexif-item">
+                    <span class="reflexif-label"><i class="bi bi-exclamation-triangle"></i> Mes difficultés</span>
+                    <p>Distinguer chiffrement symétrique et asymétrique et comprendre quand combiner les deux (comme dans TLS) a demandé plusieurs lectures avant d'être vraiment clair dans mon esprit.</p>
+                  </div>
+                  <div class="reflexif-item">
+                    <span class="reflexif-label"><i class="bi bi-mortarboard"></i> Ce que j'en ai appris</span>
+                    <p>J'ai compris que la cryptographie est un outil au service d'objectifs de sécurité précis, et qu'il est aussi important de savoir quand ne pas réinventer la roue que de connaître les algorithmes.</p>
+                  </div>
+                  <div class="reflexif-item">
+                    <span class="reflexif-label"><i class="bi bi-arrow-clockwise"></i> Ce que je ferais autrement</span>
+                    <p>Je m'appuierais davantage sur les recommandations officielles (RGS de l'ANSSI) pour le choix des algorithmes et longueurs de clés plutôt que de choisir intuitivement.</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -155,8 +247,31 @@
           <div class="ac-block-projects">
             <div class="row gy-3">
               <div class="col-12">
-                <div class="ac-placeholder-mini">
-                  <i class="bi bi-folder-plus"></i> Aucun projet pour cet apprentissage — à compléter prochainement.
+                <div class="ac-reflexif">
+                  <div class="reflexif-item">
+                    <span class="reflexif-label"><i class="bi bi-pencil"></i> Ce que j'ai fait</span>
+                    <p>J'ai étudié les principales catégories d'attaques (phishing, MITM, injection SQL, déni de service, ARP spoofing) et analysé des exemples réels pour en comprendre les mécanismes.</p>
+                  </div>
+                  <div class="reflexif-item">
+                    <span class="reflexif-label"><i class="bi bi-lightbulb"></i> Pourquoi je l'ai fait</span>
+                    <p>Pour défendre un système, il faut d'abord comprendre comment il peut être attaqué : connaître les techniques offensives est indispensable pour mettre en place des contre-mesures efficaces.</p>
+                  </div>
+                  <div class="reflexif-item">
+                    <span class="reflexif-label"><i class="bi bi-tools"></i> Comment je l'ai fait</span>
+                    <p>Via les cours de sécurité, l'étude de rapports d'incidents (ANSSI, CERT-FR) et des TP en environnement isolé pour observer certaines attaques (ARP poisoning avec Ettercap).</p>
+                  </div>
+                  <div class="reflexif-item">
+                    <span class="reflexif-label"><i class="bi bi-exclamation-triangle"></i> Mes difficultés</span>
+                    <p>La diversité des vecteurs d'attaque est telle qu'il est difficile de tous les mémoriser ; j'ai dû organiser mes connaissances par catégories (réseau, applicatif, social engineering) pour m'y retrouver.</p>
+                  </div>
+                  <div class="reflexif-item">
+                    <span class="reflexif-label"><i class="bi bi-mortarboard"></i> Ce que j'en ai appris</span>
+                    <p>J'ai compris que la plupart des attaques exploitent des failles connues et des erreurs de configuration ; une bonne hygiène de sécurité préviendrait la majorité d'entre elles.</p>
+                  </div>
+                  <div class="reflexif-item">
+                    <span class="reflexif-label"><i class="bi bi-arrow-clockwise"></i> Ce que je ferais autrement</span>
+                    <p>Je pratiquerais davantage sur des plateformes de challenges (type CTF ou TryHackMe) pour confronter la théorie à des scénarios d'attaque réels et développer des réflexes défensifs.</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -171,8 +286,31 @@
           <div class="ac-block-projects">
             <div class="row gy-3">
               <div class="col-12">
-                <div class="ac-placeholder-mini">
-                  <i class="bi bi-folder-plus"></i> Aucun projet pour cet apprentissage — à compléter prochainement.
+                <div class="ac-reflexif">
+                  <div class="reflexif-item">
+                    <span class="reflexif-label"><i class="bi bi-pencil"></i> Ce que j'ai fait</span>
+                    <p>J'ai lu et synthétisé des CVE (Common Vulnerabilities and Exposures), des RFC et des documentations techniques Cisco en anglais pour comprendre les vulnérabilités et les configurer correctement.</p>
+                  </div>
+                  <div class="reflexif-item">
+                    <span class="reflexif-label"><i class="bi bi-lightbulb"></i> Pourquoi je l'ai fait</span>
+                    <p>La très grande majorité de la documentation technique et des ressources de cybersécurité est en anglais ; ne pas pouvoir la lire autonomement est un frein majeur en contexte professionnel.</p>
+                  </div>
+                  <div class="reflexif-item">
+                    <span class="reflexif-label"><i class="bi bi-tools"></i> Comment je l'ai fait</span>
+                    <p>En consultant directement la documentation officielle (Cisco, NIST, RFC Editor), en utilisant un dictionnaire technique et en pratiquant régulièrement la lecture d'articles de sécurité en anglais.</p>
+                  </div>
+                  <div class="reflexif-item">
+                    <span class="reflexif-label"><i class="bi bi-exclamation-triangle"></i> Mes difficultés</span>
+                    <p>Le vocabulaire technique anglo-saxon de la cybersécurité est très spécifique ; les faux-amis et acronymes (ACL, IDS, IPS, SOC) nécessitent un apprentissage dédié au-delà de l'anglais courant.</p>
+                  </div>
+                  <div class="reflexif-item">
+                    <span class="reflexif-label"><i class="bi bi-mortarboard"></i> Ce que j'en ai appris</span>
+                    <p>J'ai enrichi mon vocabulaire technique en anglais et développé la capacité de comprendre l'essentiel d'un document sans traduire mot à mot, ce qui accélère significativement la recherche d'information.</p>
+                  </div>
+                  <div class="reflexif-item">
+                    <span class="reflexif-label"><i class="bi bi-arrow-clockwise"></i> Ce que je ferais autrement</span>
+                    <p>Je constituerais un glossaire personnel des termes techniques récurrents pour progresser plus vite et éviter de chercher le même vocabulaire plusieurs fois.</p>
+                  </div>
                 </div>
               </div>
             </div>

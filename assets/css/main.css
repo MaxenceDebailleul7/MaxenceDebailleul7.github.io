@@ -2693,6 +2693,49 @@ section,
   flex-shrink: 0;
 }
 
+/* Démarche réflexive */
+.ac-reflexif {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.reflexif-item {
+  background: color-mix(in srgb, var(--accent-color), transparent 93%);
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 72%);
+  border-radius: 8px;
+  padding: 14px 16px;
+}
+
+.reflexif-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--accent-color);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.reflexif-label i {
+  font-size: 13px;
+}
+
+.reflexif-item p {
+  margin: 0;
+  font-size: 14px;
+  color: color-mix(in srgb, var(--default-color), transparent 15%);
+  line-height: 1.65;
+}
+
+@media (max-width: 767px) {
+  .ac-reflexif {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Project Cards */
 .project-card {
   background-color: var(--surface-color);
