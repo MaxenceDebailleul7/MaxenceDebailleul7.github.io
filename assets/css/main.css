@@ -1571,6 +1571,7 @@ section,
   transition: all 0.3s ease-in-out;
   border-radius: 50px;
   background: #f4f4f4;
+  color: #1f1f1f;
 }
 
 .portfolio-filters li:hover,
@@ -1610,7 +1611,7 @@ section,
 
 .portfolio-content {
   background: var(--surface-color);
-  border: 3px solid #eee;
+  border: 5px solid #ececec;
   border-radius: 10px;
   overflow: hidden;
   transition: 0.4s;
@@ -1618,22 +1619,27 @@ section,
 
 .portfolio-item.filter-admin .portfolio-content {
   border-color: #ff1e1e;
+  box-shadow: 0 0 15px rgba(255, 30, 30, 0.3);
 }
 
 .portfolio-item.filter-connect .portfolio-content {
   border-color: #ff9900;
+  box-shadow: 0 0 15px rgba(255, 153, 0, 0.3);
 }
 
 .portfolio-item.filter-code .portfolio-content {
   border-color: #ffc400;
+  box-shadow: 0 0 15px rgba(255, 196, 0, 0.3);
 }
 
 .portfolio-item.filter-secure .portfolio-content {
   border-color: #5cc72b;
+  box-shadow: 0 0 15px rgba(92, 199, 43, 0.3);
 }
 
 .portfolio-item.filter-monitor .portfolio-content {
   border-color: #3b39ac;
+  box-shadow: 0 0 15px rgba(59, 57, 172, 0.3);
 }
 
 .isotope-layout .filter-active[data-filter="*"]~.isotope-container .portfolio-item {
