@@ -12,29 +12,41 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Ubuntu",  sans-serif;
-  --nav-font: "Nunito",  sans-serif;
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Ubuntu", sans-serif;
+  --nav-font: "Nunito", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
-  --background-color: #1f1f1f; /* Background color for the entire website, including individual sections */
-  --default-color: #ffffff; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #ffffff; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #ececec; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #232323; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #310606; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+:root {
+  --background-color: #1f1f1f;
+  /* Background color for the entire website, including individual sections */
+  --default-color: #ffffff;
+  /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #ffffff;
+  /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #ececec;
+  /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #232323;
+  /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #310606;
+  /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: rgba(236, 236, 236, 0.59);  /* The default color of the main navmenu links */
-  --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #393939; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #393939; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #ffffff; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #ececec; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: rgba(236, 236, 236, 0.59);
+  /* The default color of the main navmenu links */
+  --nav-hover-color: #ffffff;
+  /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #393939;
+  /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #393939;
+  /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #ffffff;
+  /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #ececec;
+  /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -1513,168 +1525,172 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Portfolio Section
+# Portfolio overlays and subtle separators (more transparent)
 --------------------------------------------------------------*/
-@media (max-width: 991px) {
-  .portfolio .filter-sidebar {
-    margin-bottom: 30px;
-  }
+.portfolio .portfolio-item .portfolio-info {
+  opacity: 0;
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: -100%;
+  z-index: 3;
+  transition: all ease-in-out 0.5s;
+  background: color-mix(in srgb, var(--background-color), transparent 95%);
+  padding: 15px;
 }
 
-.portfolio .filters-wrapper {
-  background-color: color-mix(in srgb, var(--surface-color), var(--default-color) 3%);
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+.section-title h2:before {
+  background: color-mix(in srgb, var(--default-color), transparent 85%);
 }
 
-@media (max-width: 991px) {
-  .portfolio .filters-wrapper {
-    padding: 20px;
-  }
+.footer .copyright {
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 96%);
 }
 
-.portfolio .portfolio-filters {
+
+.portfolio-filters {
   padding: 0;
-  margin: 0;
+  margin: 0 auto 30px auto;
   list-style: none;
+  text-align: center;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
 }
 
-@media (max-width: 991px) {
-  .portfolio .portfolio-filters {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-
-.portfolio .portfolio-filters li {
+.portfolio-filters li {
   cursor: pointer;
-  padding: 12px 20px;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1;
-  color: var(--default-color);
-  transition: all 0.3s ease-in-out;
-  border-radius: 6px;
-  background: transparent;
-  position: relative;
-  border-left: 3px solid transparent;
-}
-
-@media (max-width: 991px) {
-  .portfolio .portfolio-filters li {
-    padding: 8px 16px;
-    border: 1px solid color-mix(in srgb, var(--accent-color), transparent 80%);
-    border-left-width: 3px;
-  }
-}
-
-.portfolio .portfolio-filters li:hover {
-  color: var(--accent-color);
-  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
-  border-left-color: color-mix(in srgb, var(--accent-color), transparent 50%);
-}
-
-.portfolio .portfolio-filters li.filter-active {
-  color: var(--accent-color);
-  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
-  border-left-color: var(--accent-color);
-  font-weight: 600;
-}
-
-.portfolio .portfolio-wrap {
-  transition: 0.4s;
-  position: relative;
-  overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-  height: 100%;
-}
-
-.portfolio .portfolio-wrap img {
-  transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
-  width: 100%;
-  height: 350px;
-  object-fit: cover;
-}
-
-.portfolio .portfolio-wrap .portfolio-info {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 25px;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0) 100%);
-  z-index: 3;
-  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
-  transform: translateY(20px);
-  opacity: 0;
-}
-
-.portfolio .portfolio-wrap .portfolio-info .content {
-  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
-  transform: translateY(20px);
-}
-
-.portfolio .portfolio-wrap .portfolio-info .category {
   display: inline-block;
-  color: var(--accent-color);
+  padding: 8px 20px;
   font-size: 14px;
   font-weight: 500;
+  line-height: 1;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 50px;
+  background: #f4f4f4;
 }
 
-.portfolio .portfolio-wrap .portfolio-info h4 {
-  font-size: 20px;
-  color: var(--contrast-color);
-  font-weight: 700;
+.portfolio-filters li:hover,
+.portfolio-filters li.filter-active {
+  color: #fff;
+}
+
+.portfolio-filters li[data-filter="*"]:hover,
+.portfolio-filters li[data-filter="*"].filter-active {
+  background: #0059ff;
+}
+
+.portfolio-filters li[data-filter=".filter-admin"]:hover,
+.portfolio-filters li[data-filter=".filter-admin"].filter-active {
+  background: #ff1e1e;
+}
+
+.portfolio-filters li[data-filter=".filter-connect"]:hover,
+.portfolio-filters li[data-filter=".filter-connect"].filter-active {
+  background: #ff9900;
+}
+
+.portfolio-filters li[data-filter=".filter-code"]:hover,
+.portfolio-filters li[data-filter=".filter-code"].filter-active {
+  background: #ffc400;
+}
+
+.portfolio-filters li[data-filter=".filter-secure"]:hover,
+.portfolio-filters li[data-filter=".filter-secure"].filter-active {
+  background: #5cc72b;
+}
+
+.portfolio-filters li[data-filter=".filter-monitor"]:hover,
+.portfolio-filters li[data-filter=".filter-monitor"].filter-active {
+  background: #3b39ac;
+}
+
+.portfolio-content {
+  background: var(--surface-color);
+  border: 3px solid #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.portfolio-item.filter-admin .portfolio-content {
+  border-color: #ff1e1e;
+}
+
+.portfolio-item.filter-connect .portfolio-content {
+  border-color: #ff9900;
+}
+
+.portfolio-item.filter-code .portfolio-content {
+  border-color: #ffc400;
+}
+
+.portfolio-item.filter-secure .portfolio-content {
+  border-color: #5cc72b;
+}
+
+.portfolio-item.filter-monitor .portfolio-content {
+  border-color: #3b39ac;
+}
+
+.isotope-layout .filter-active[data-filter="*"]~.isotope-container .portfolio-item {
+  width: 33.33% !important;
+  position: relative !important;
+  left: auto !important;
+  top: auto !important;
+}
+
+.isotope-layout .filter-active[data-filter="*"]~.isotope-container .portfolio-description {
+  display: none !important;
+}
+
+.isotope-layout .filter-active[data-filter="*"]~.isotope-container .portfolio-img {
+  width: 100% !important;
+}
+
+.portfolio-item {
+  width: 100% !important;
+  transition: 0.5s ease-in-out;
+}
+
+.portfolio-description {
+  padding: 30px;
+  display: block;
+}
+
+.portfolio-description h4 {
+  color: var(--accent-color);
   margin-bottom: 15px;
 }
 
-.portfolio .portfolio-wrap .portfolio-info .portfolio-links {
-  display: flex;
-  gap: 12px;
+#Credits {
+  padding: 60px 0;
+  text-align: center;
 }
 
-.portfolio .portfolio-wrap .portfolio-info .portfolio-links a {
-  color: var(--contrast-color);
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: color-mix(in srgb, var(--accent-color), transparent 30%);
-  border-radius: 50%;
-  font-size: 18px;
-  transition: 0.3s;
+#Credits .details-link {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--accent-color);
+  transition: color 0.3s;
 }
 
-.portfolio .portfolio-wrap .portfolio-info .portfolio-links a:hover {
-  background-color: var(--accent-color);
-  transform: translateY(-3px);
+#Credits .details-link:hover {
+  color: var(--nav-hover-color);
 }
 
-.portfolio .portfolio-wrap:hover {
-  transform: translateY(-5px);
-}
+@media (max-width: 768px) {
+  #Credits {
+    padding: 40px 20px;
+  }
 
-.portfolio .portfolio-wrap:hover img {
-  transform: scale(1.08);
-}
-
-.portfolio .portfolio-wrap:hover .portfolio-info {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-.portfolio .portfolio-wrap:hover .portfolio-info .content {
-  transform: translateY(0);
+  #Credits .details-link {
+    font-size: 14px;
+  }
 }
 
 /*--------------------------------------------------------------
