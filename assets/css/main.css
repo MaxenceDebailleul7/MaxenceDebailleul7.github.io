@@ -2736,6 +2736,63 @@ section,
   }
 }
 
+/* Séparateurs d'années */
+.ac-year-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 28px 0 18px;
+}
+
+.ac-year-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--accent-color);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.ac-year-label--pending {
+  color: color-mix(in srgb, var(--default-color), transparent 45%);
+}
+
+.ac-year-line {
+  flex: 1;
+  height: 1px;
+  background: color-mix(in srgb, var(--default-color), transparent 85%);
+}
+
+/* Blocs AC verrouillés (années futures) */
+.ac-block--locked {
+  opacity: 0.45;
+}
+
+.ac-block--locked .ac-block-header {
+  border-bottom: none;
+}
+
+.ac-block--locked .ac-block-projects {
+  display: none;
+}
+
+.ac-lock-info {
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: color-mix(in srgb, var(--default-color), transparent 45%);
+  font-style: italic;
+}
+
+.ac-lock-info i {
+  font-size: 14px;
+}
+
 /* Project Cards */
 .project-card {
   background-color: var(--surface-color);
