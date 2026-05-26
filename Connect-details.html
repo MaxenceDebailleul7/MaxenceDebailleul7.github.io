@@ -98,30 +98,49 @@
                 <div class="ac-reflexif">
                   <div class="reflexif-item">
                     <span class="reflexif-label"><i class="bi bi-pencil"></i> Ce que j'ai fait</span>
-                    <p>J'ai réalisé des mesures de signaux électriques et numériques à l'oscilloscope et au générateur de fonctions, puis analysé les formes d'onde (fréquence, amplitude, déphasage).</p>
+                    <p>J'ai mesuré et analysé des signaux électriques à l'oscilloscope numérique (Analog Discovery / WaveForms) et au générateur de fonctions : lecture d'amplitude, de période, de fréquence, et premiers tracés de spectres.</p>
                   </div>
                   <div class="reflexif-item">
                     <span class="reflexif-label"><i class="bi bi-lightbulb"></i> Pourquoi je l'ai fait</span>
-                    <p>Comprendre et qualifier un signal est essentiel pour vérifier la conformité d'une transmission et identifier la source d'une dégradation sur un support physique.</p>
+                    <p>Savoir mesurer et interpréter un signal est indispensable pour vérifier la conformité d'une transmission et identifier une anomalie sur un support physique.</p>
                   </div>
                   <div class="reflexif-item">
                     <span class="reflexif-label"><i class="bi bi-tools"></i> Comment je l'ai fait</span>
-                    <p>En TP avec oscilloscope numérique et générateur de fonctions, en notant les mesures dans un compte rendu et en les comparant aux valeurs théoriques attendues.</p>
+                    <p>En TP avec l'Analog Discovery et WaveForms dans le cadre de R1.04, R1.13 (Maths du signal) et R2.05 (Signaux et systèmes pour les transmissions) : génération de signaux sinusoïdaux et carrés, mesures Vpp/Vrms/fréquence, et premiers réglages du déclenchement.</p>
                   </div>
                   <div class="reflexif-item">
                     <span class="reflexif-label"><i class="bi bi-exclamation-triangle"></i> Mes difficultés</span>
-                    <p>Le réglage du déclenchement (trigger) de l'oscilloscope pour stabiliser l'affichage d'un signal m'a demandé de la pratique avant de devenir automatique.</p>
+                    <p>Le réglage du déclenchement (trigger) de l'oscilloscope pour stabiliser l'affichage d'un signal m'a demandé plusieurs essais avant de comprendre la logique.</p>
                   </div>
                   <div class="reflexif-item">
                     <span class="reflexif-label"><i class="bi bi-mortarboard"></i> Ce que j'en ai appris</span>
-                    <p>J'ai acquis une méthode de lecture et d'interprétation des signaux, et compris l'impact des perturbations (bruit, atténuation) sur la qualité d'une transmission.</p>
+                    <p>J'ai acquis une méthode de lecture et d'interprétation des signaux, et compris l'impact des perturbations sur la qualité d'une mesure.</p>
                   </div>
                   <div class="reflexif-item">
                     <span class="reflexif-label"><i class="bi bi-arrow-clockwise"></i> Ce que je ferais autrement</span>
-                    <p>Je prendrais systématiquement des captures d'écran des formes d'onde pour constituer un dossier de référence comparatif entre les différents types de signaux.</p>
+                    <p>Je prendrais systématiquement des captures d'écran des formes d'onde pour constituer un dossier de référence lors des TPs.</p>
+                  </div></div>
                   </div>
                 </div>
               </div>
+<div class="trace-section">
+                    <div class="trace-section-header">
+                      <i class="bi bi-paperclip"></i> Traces / Documents
+                    </div>
+                  <div class="trace-card">
+                    <div class="trace-card-preview">
+                      <object data="assets/traces/AC12.01_TP_signaux_transmission.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH" type="application/pdf" class="trace-pdf-viewer"><p>PDF non supporté</p></object>
+                    </div>
+                    <div class="trace-card-info">
+                      <div class="trace-card-info-left">
+                        <div class="trace-card-meta">Compte-rendu TP</div>
+                        <div class="trace-card-label">Signaux et transmission</div>
+                      </div>
+                      <div class="trace-card-type"><i class="bi bi-file-earmark-pdf"></i> PDF</div>
+                      <button class="trace-btn-fullscreen" onclick="openLightboxPdf('assets/traces/AC12.01_TP_signaux_transmission.pdf')">
+                        <i class="bi bi-arrows-fullscreen"></i> Plein écran
+                      </button>
+                    </div>
             </div>
           </div>
         </div>
@@ -137,30 +156,49 @@
                 <div class="ac-reflexif">
                   <div class="reflexif-item">
                     <span class="reflexif-label"><i class="bi bi-pencil"></i> Ce que j'ai fait</span>
-                    <p>J'ai étudié les caractéristiques des supports de transmission (bande passante, atténuation, rapport signal/bruit) et les modèles mathématiques associés (théorème de Shannon, Nyquist).</p>
+                    <p>J'ai caractérisé des systèmes de transmission en étudiant leur modélisation mathématique : analyse spectrale de signaux sinusoïdaux et carrés avec WaveForms, calcul des harmoniques via les séries de Fourier, et étude des filtres RC (réponse en fréquence, diagramme de Bode).</p> signal/bruit) et les modèles mathématiques associés (théorème de Shannon, Nyquist).</p>
                   </div>
                   <div class="reflexif-item">
                     <span class="reflexif-label"><i class="bi bi-lightbulb"></i> Pourquoi je l'ai fait</span>
-                    <p>Ces modèles permettent de dimensionner un lien de transmission et de comprendre ses limites théoriques, ce qui est fondamental pour choisir la bonne technologie.</p>
+                    <p>La modélisation mathématique d'un signal est la base du dimensionnement de toute liaison de transmission. Sans comprendre la composition fréquentielle d'un signal, il est impossible de choisir un filtre adapté ou d'évaluer une distorsion.</p>es, ce qui est fondamental pour choisir la bonne technologie.</p>
                   </div>
                   <div class="reflexif-item">
                     <span class="reflexif-label"><i class="bi bi-tools"></i> Comment je l'ai fait</span>
-                    <p>À travers les cours de mathématiques appliquées aux télécoms, des exercices de calcul de débit théorique et l'utilisation de simulations en TP.</p>
+                    <p>En TP avec l'Analog Discovery dans le cadre de R2.05 (Signaux et systèmes) et R2.14 (Maths des transmissions) : analyse FFT sur l'analyseur de spectre WaveForms, calcul du THD, vérification par les formules de Fourier et tracé de diagrammes de Bode.</p>ique et l'utilisation de simulations en TP.</p>
                   </div>
                   <div class="reflexif-item">
                     <span class="reflexif-label"><i class="bi bi-exclamation-triangle"></i> Mes difficultés</span>
-                    <p>Le passage des formules abstraites aux cas concrets (calculer un débit réel à partir du rapport S/N) a nécessité plusieurs exercices d'application avant d'être à l'aise.</p>
+                    <p>La conversion entre unités (Vpp, Vrms, dBV) et le lien entre les formules théoriques de Fourier et les raies mesurées sur l'analyseur de spectre ont été les points les plus délicats.</p> a nécessité plusieurs exercices d'application avant d'être à l'aise.</p>
                   </div>
                   <div class="reflexif-item">
                     <span class="reflexif-label"><i class="bi bi-mortarboard"></i> Ce que j'en ai appris</span>
-                    <p>J'ai compris pourquoi les performances réelles d'un réseau sont toujours inférieures au débit théorique, et comment les paramètres physiques influencent directement la qualité de service.</p>
+                    <p>J'ai compris le lien fondamental entre domaine temporel et fréquentiel, et acquis une méthode pour prévoir le spectre d'un signal avant de le mesurer.</p>que, et comment les paramètres physiques influencent directement la qualité de service.</p>
                   </div>
                   <div class="reflexif-item">
                     <span class="reflexif-label"><i class="bi bi-arrow-clockwise"></i> Ce que je ferais autrement</span>
-                    <p>Je relierais systématiquement chaque formule à un exemple réel de technologie (Wi-Fi, fibre, 4G) pour ancrer la théorie dans des applications concrètes.</p>
+                    <p>Je rédigerais mes calculs intermédiaires plus proprement pendant les TPs pour pouvoir les relire lors des révisions, plutôt que de tout refaire à partir des captures d'écran.</p>r ancrer la théorie dans des applications concrètes.</p>
+                  </div></div>
                   </div>
                 </div>
               </div>
+<div class="trace-section">
+                    <div class="trace-section-header">
+                      <i class="bi bi-paperclip"></i> Traces / Documents
+                    </div>
+                  <div class="trace-card">
+                    <div class="trace-card-preview">
+                      <object data="assets/traces/AC12.02_CR_TP_analyse_spectrale_Fourier.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH" type="application/pdf" class="trace-pdf-viewer"><p>PDF non supporté</p></object>
+                    </div>
+                    <div class="trace-card-info">
+                      <div class="trace-card-info-left">
+                        <div class="trace-card-meta">Compte-rendu TP</div>
+                        <div class="trace-card-label">Analyse spectrale et séries de Fourier</div>
+                      </div>
+                      <div class="trace-card-type"><i class="bi bi-file-earmark-pdf"></i> PDF</div>
+                      <button class="trace-btn-fullscreen" onclick="openLightboxPdf('assets/traces/AC12.02_CR_TP_analyse_spectrale_Fourier.pdf')">
+                        <i class="bi bi-arrows-fullscreen"></i> Plein écran
+                      </button>
+                    </div>
             </div>
           </div>
         </div>
@@ -176,30 +214,49 @@
                 <div class="ac-reflexif">
                   <div class="reflexif-item">
                     <span class="reflexif-label"><i class="bi bi-pencil"></i> Ce que j'ai fait</span>
-                    <p>J'ai réalisé des câblages réseau (confection de câbles RJ45 droit et croisé, pose de prises RJ45) et fait des mesures de continuité et de longueur avec un testeur de câble.</p>
+                    <p>J'ai déployé des supports de transmission filaires : étude des caractéristiques des câbles réseau (catégories Cat5e/Cat6/Cat7, fibre optique), confection de câbles RJ45 droits et croisés, et mesures de qualification avec testeur de câble.</p>l sinusoïdal pur, mesure du THD, étude du signal carré (harmoniques impaires), analyse de la composante continue (offset) et vérification par développement en série de Fourier continuité et de longueur avec un testeur de câble.</p>
                   </div>
                   <div class="reflexif-item">
                     <span class="reflexif-label"><i class="bi bi-lightbulb"></i> Pourquoi je l'ai fait</span>
-                    <p>Le déploiement physique des câbles est la base de toute infrastructure réseau ; une mauvaise sertissure ou un câblage non conforme entraîne des pannes difficiles à diagnostiquer.</p>
+                    <p>Le câblage physique est la fondation de toute infrastructure réseau. Une mauvaise sertissure ou un mauvais choix de câble peut provoquer des pertes de performance ou des pannes intermittentes difficiles à diagnostiquer.</p>
                   </div>
                   <div class="reflexif-item">
                     <span class="reflexif-label"><i class="bi bi-tools"></i> Comment je l'ai fait</span>
-                    <p>En TP de câblage structuré, avec pince à sertir, dénudeur, testeur de câble et en respectant les normes de câblage EIA/TIA-568.</p>
+                    <p>Via les TPs R1.05 (Supports de transmission pour les réseaux) : étude des caractéristiques d'atténuation et de bande passante des différentes catégories de câbles, confection de câbles avec pince à sertir et dénudeur, tests avec testeur de câble.</p>
                   </div>
                   <div class="reflexif-item">
                     <span class="reflexif-label"><i class="bi bi-exclamation-triangle"></i> Mes difficultés</span>
-                    <p>L'ordre des fils dans le connecteur RJ45 et la manipulation de la pince à sertir ont demandé de la dextérité ; mes premiers câbles n'étaient pas toujours opérationnels du premier coup.</p>
+                    <p>L'ordre précis des fils dans le connecteur RJ45 selon la norme T568B et la manipulation de la pince à sertir pour avoir un contact propre ont demandé de la dextérité et plusieurs essais.</p>
                   </div>
                   <div class="reflexif-item">
                     <span class="reflexif-label"><i class="bi bi-mortarboard"></i> Ce que j'en ai appris</span>
-                    <p>J'ai intégré l'importance du test systématique après chaque câblage et compris que la qualité physique d'une installation conditionne directement ses performances.</p>
+                    <p>J'ai intégré l'importance du test systématique après chaque câblage et compris que la qualité physique d'un lien conditionne directement les performances réseau.</p>
                   </div>
                   <div class="reflexif-item">
                     <span class="reflexif-label"><i class="bi bi-arrow-clockwise"></i> Ce que je ferais autrement</span>
-                    <p>Je m'exercerais davantage à la sertissure sur des chutes de câble avant de réaliser les câbles définitifs, pour gagner en régularité.</p>
+                    <p>Je m'exercerais davantage à la sertissure sur des chutes de câble avant de réaliser les câbles définitifs, pour éviter le gaspillage de matériel.</p>
+                  </div></div>
                   </div>
                 </div>
               </div>
+<div class="trace-section">
+                    <div class="trace-section-header">
+                      <i class="bi bi-paperclip"></i> Traces / Documents
+                    </div>
+                  <div class="trace-card">
+                    <div class="trace-card-preview">
+                      <object data="assets/traces/AC12.03_fiche_revision_R205_signaux.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH" type="application/pdf" class="trace-pdf-viewer"><p>PDF non supporté</p></object>
+                    </div>
+                    <div class="trace-card-info">
+                      <div class="trace-card-info-left">
+                        <div class="trace-card-meta">Fiche de révision</div>
+                        <div class="trace-card-label">R205 – Signaux et systèmes</div>
+                      </div>
+                      <div class="trace-card-type"><i class="bi bi-file-earmark-pdf"></i> PDF</div>
+                      <button class="trace-btn-fullscreen" onclick="openLightboxPdf('assets/traces/AC12.03_fiche_revision_R205_signaux.pdf')">
+                        <i class="bi bi-arrows-fullscreen"></i> Plein écran
+                      </button>
+                    </div>
             </div>
           </div>
         </div>
@@ -215,30 +272,49 @@
                 <div class="ac-reflexif">
                   <div class="reflexif-item">
                     <span class="reflexif-label"><i class="bi bi-pencil"></i> Ce que j'ai fait</span>
-                    <p>J'ai découvert les principes de la téléphonie sur IP (protocoles SIP, RTP) et configuré un IPBX logiciel (Asterisk) pour établir des communications entre postes IP en TP.</p>
+                    <p>J'ai configuré un serveur de téléphonie IP Asterisk sous Linux : création des comptes SIP dans pjsip.conf, mise en place du plan de numérotation dans extensions.conf, enregistrement de téléphones Fanvil et Cisco, et déploiement d'une messagerie vocale.</p>
                   </div>
                   <div class="reflexif-item">
                     <span class="reflexif-label"><i class="bi bi-lightbulb"></i> Pourquoi je l'ai fait</span>
-                    <p>La ToIP est la technologie téléphonique dominante en entreprise ; comprendre son fonctionnement est indispensable pour tout technicien chargé de l'infrastructure de communication.</p>
+                    <p>La ToIP (téléphonie sur IP) est la technologie téléphonique dominante en entreprise. Comprendre son fonctionnement et savoir configurer un IPBX est une compétence directement applicable en stage ou en alternance.</p>
                   </div>
                   <div class="reflexif-item">
                     <span class="reflexif-label"><i class="bi bi-tools"></i> Comment je l'ai fait</span>
-                    <p>En configurant Asterisk sur une VM Linux, en enregistrant des softphones SIP et en analysant les échanges SIP avec Wireshark pour comprendre le déroulé d'un appel.</p>
+                    <p>Via les TPs R2.04 (Initiation à la téléphonie d'entreprise) : déploiement d'Asterisk-alpine en VM, configuration des fichiers pjsip.conf et extensions.conf, enregistrement des téléphones physiques Fanvil et Cisco via l'interface web, et test des appels entre postes.</p>
                   </div>
                   <div class="reflexif-item">
                     <span class="reflexif-label"><i class="bi bi-exclamation-triangle"></i> Mes difficultés</span>
-                    <p>La syntaxe des fichiers de configuration d'Asterisk (extensions.conf, sip.conf) est complexe et les erreurs sont difficiles à localiser sans lire attentivement les logs système.</p>
+                    <p>La syntaxe des fichiers de configuration d'Asterisk est stricte et peu intuitive. Une erreur dans pjsip.conf empêche tous les enregistrements sans message d'erreur clair.</p>
                   </div>
                   <div class="reflexif-item">
                     <span class="reflexif-label"><i class="bi bi-mortarboard"></i> Ce que j'en ai appris</span>
-                    <p>J'ai compris le fonctionnement d'un système de téléphonie d'entreprise et le rôle des protocoles SIP/RTP dans l'établissement et le transport des appels.</p>
+                    <p>J'ai compris le fonctionnement d'un système de téléphonie d'entreprise et le rôle des protocoles SIP/PJSIP et RTP dans l'établissement d'un appel.</p>
                   </div>
                   <div class="reflexif-item">
                     <span class="reflexif-label"><i class="bi bi-arrow-clockwise"></i> Ce que je ferais autrement</span>
-                    <p>Je testerais la configuration avec un seul poste avant d'en ajouter d'autres, pour isoler les problèmes de configuration dès le départ.</p>
+                    <p>Je testerais la configuration avec un seul compte avant d'en ajouter d'autres, pour isoler les problèmes dès le départ.</p>
+                  </div></div>
                   </div>
                 </div>
               </div>
+<div class="trace-section">
+                    <div class="trace-section-header">
+                      <i class="bi bi-paperclip"></i> Traces / Documents
+                    </div>
+                  <div class="trace-card">
+                    <div class="trace-card-preview">
+                      <object data="assets/traces/AC12.04_CR_CTP_telephonie_Asterisk_SIP.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH" type="application/pdf" class="trace-pdf-viewer"><p>PDF non supporté</p></object>
+                    </div>
+                    <div class="trace-card-info">
+                      <div class="trace-card-info-left">
+                        <div class="trace-card-meta">Compte-rendu CTP</div>
+                        <div class="trace-card-label">Téléphonie IP – Asterisk / SIP</div>
+                      </div>
+                      <div class="trace-card-type"><i class="bi bi-file-earmark-pdf"></i> PDF</div>
+                      <button class="trace-btn-fullscreen" onclick="openLightboxPdf('assets/traces/AC12.04_CR_CTP_telephonie_Asterisk_SIP.pdf')">
+                        <i class="bi bi-arrows-fullscreen"></i> Plein écran
+                      </button>
+                    </div>
             </div>
           </div>
         </div>
@@ -254,30 +330,64 @@
                 <div class="ac-reflexif">
                   <div class="reflexif-item">
                     <span class="reflexif-label"><i class="bi bi-pencil"></i> Ce que j'ai fait</span>
-                    <p>J'ai rédigé des comptes rendus techniques destinés à différents publics (techniciens, enseignants) et participé à des présentations orales en adaptant le niveau de technicité à l'audience.</p>
+                    <p>J'ai pratiqué la communication technique écrite et orale : rédaction de comptes rendus de TP, présentations orales, et adaptation du discours selon l'interlocuteur (enseignant, camarade, contexte professionnel simulé).</p>CTION, VIDÉO) : routage inter-VLAN sur routeur Cisco série 800, DHCP par VLAN, et déploiement d'un serveur web accessible depuis tous les réseauxésentations orales en adaptant le niveau de technicité à l'audience.</p>
                   </div>
                   <div class="reflexif-item">
                     <span class="reflexif-label"><i class="bi bi-lightbulb"></i> Pourquoi je l'ai fait</span>
-                    <p>Un technicien réseau doit aussi bien expliquer un problème à un utilisateur non-technique qu'à un collègue expert ; la communication est une compétence transversale indispensable.</p>
+                    <p>Un technicien réseau doit savoir communiquer aussi bien avec un collègue technique qu'avec un utilisateur non-technique. Cette compétence est aussi importante que les compétences techniques pour réussir en entreprise.</p>
                   </div>
                   <div class="reflexif-item">
                     <span class="reflexif-label"><i class="bi bi-tools"></i> Comment je l'ai fait</span>
-                    <p>Via les travaux écrits, les exposés oraux en cours et les mises en situation de jeu de rôles (relation client/technicien) proposés en SAE.</p>
+                    <p>Via les modules R1.11/R211 Communication et les SAÉ : rédaction de rapports techniques, exposés oraux sur les projets de SAÉ, et mises en situation de communication professionnelle.</p>
                   </div>
                   <div class="reflexif-item">
                     <span class="reflexif-label"><i class="bi bi-exclamation-triangle"></i> Mes difficultés</span>
-                    <p>Trouver le bon niveau de détail technique selon l'interlocuteur est difficile : trop précis, on perd le non-initié ; trop vague, on manque de rigueur face à un expert.</p>
+                    <p>Trouver le bon niveau de détail technique selon l'interlocuteur est difficile : trop précis on perd le non-technicien, trop vague on perd en crédibilité face à un expert.</p>
                   </div>
                   <div class="reflexif-item">
                     <span class="reflexif-label"><i class="bi bi-mortarboard"></i> Ce que j'en ai appris</span>
-                    <p>J'ai appris à reformuler les concepts techniques avec des analogies simples et à structurer mon propos clairement, que ce soit à l'écrit ou à l'oral.</p>
+                    <p>J'ai appris à reformuler les concepts techniques avec des analogies simples et à structurer mon propos (contexte, problème, solution, résultat) pour être compris rapidement.</p>
                   </div>
                   <div class="reflexif-item">
                     <span class="reflexif-label"><i class="bi bi-arrow-clockwise"></i> Ce que je ferais autrement</span>
-                    <p>Je demanderais systématiquement en début d'échange le niveau de connaissance de mon interlocuteur pour adapter mon discours dès le départ plutôt qu'en cours de route.</p>
+                    <p>Je demanderais systématiquement en début d'échange le niveau de connaissance de mon interlocuteur pour adapter d'emblée mon niveau de discours.</p>
+                  </div></div>
                   </div>
                 </div>
               </div>
+<div class="trace-section">
+                    <div class="trace-section-header">
+                      <i class="bi bi-paperclip"></i> Traces / Documents
+                    </div>
+                  <div class="trace-card">
+                    <div class="trace-card-preview">
+                      <object data="assets/traces/AC12.05_CR_SAE12_routage_inter_VLAN.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH" type="application/pdf" class="trace-pdf-viewer"><p>PDF non supporté</p></object>
+                    </div>
+                    <div class="trace-card-info">
+                      <div class="trace-card-info-left">
+                        <div class="trace-card-meta">Compte-rendu SAÉ12</div>
+                        <div class="trace-card-label">Routage inter-VLAN</div>
+                      </div>
+                      <div class="trace-card-type"><i class="bi bi-file-earmark-pdf"></i> PDF</div>
+                      <button class="trace-btn-fullscreen" onclick="openLightboxPdf('assets/traces/AC12.05_CR_SAE12_routage_inter_VLAN.pdf')">
+                        <i class="bi bi-arrows-fullscreen"></i> Plein écran
+                      </button>
+                    </div>
+                  </div>
+                  <div class="trace-card">
+                    <div class="trace-card-preview">
+                      <img src="assets/traces/AC12.05_capture_docker_compose.png" class="trace-img-viewer" alt="Infrastructure Docker Compose">
+                    </div>
+                    <div class="trace-card-info">
+                      <div class="trace-card-info-left">
+                        <div class="trace-card-meta">Capture</div>
+                        <div class="trace-card-label">Infrastructure Docker Compose</div>
+                      </div>
+                      <div class="trace-card-type"><i class="bi bi-image"></i> Image</div>
+                      <button class="trace-btn-fullscreen" onclick="openLightboxImg('assets/traces/AC12.05_capture_docker_compose.png')">
+                        <i class="bi bi-arrows-fullscreen"></i> Plein écran
+                      </button>
+                    </div>
             </div>
           </div>
         </div>
@@ -375,6 +485,39 @@
 
   <script src="assets/js/main.js"></script>
 
+
+  <!-- Lightbox plein écran traces -->
+  <div class="trace-lightbox-overlay" id="traceLightbox" onclick="closeLightbox(event)">
+    <button class="trace-lightbox-close" onclick="closeLightbox(event)" title="Fermer">&#x2715;</button>
+    <img id="traceLightboxImg" src="" alt="Trace" style="display:none">
+    <iframe id="traceLightboxPdf" src="" style="display:none;width:90vw;height:90vh;border:none;border-radius:8px;"></iframe>
+  </div>
+  <script>
+    function openLightboxImg(src) {
+      var lb = document.getElementById("traceLightbox");
+      var img = document.getElementById("traceLightboxImg");
+      var pdf = document.getElementById("traceLightboxPdf");
+      pdf.style.display = "none"; pdf.src = "";
+      img.src = src; img.style.display = "block";
+      lb.classList.add("active");
+    }
+    function openLightboxPdf(src) {
+      var lb = document.getElementById("traceLightbox");
+      var img = document.getElementById("traceLightboxImg");
+      var pdf = document.getElementById("traceLightboxPdf");
+      img.style.display = "none"; img.src = "";
+      pdf.src = src;
+      pdf.style.display = "block";
+      lb.classList.add("active");
+    }
+    function closeLightbox(e) {
+      if (e.target === document.getElementById("traceLightbox") || e.target.classList.contains("trace-lightbox-close")) {
+        document.getElementById("traceLightbox").classList.remove("active");
+        document.getElementById("traceLightboxImg").src = "";
+        document.getElementById("traceLightboxPdf").src = "";
+      }
+    }
+  </script>
 </body>
 
 </html>
